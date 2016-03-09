@@ -38,6 +38,11 @@ public void setBombs()
   }
 }
 
+ public void keyPressed(){
+    if(key == 'r')
+      setup();
+  }
+
 public void draw ()
 {
   background(0);
@@ -143,6 +148,7 @@ public class MSButton
 
   public void draw () 
   { 
+     
     stroke(255);   
     if (marked) {
       fill(200);
@@ -218,4 +224,5 @@ public class MSButton
     }
     return numBombs;
   }
+ 
 }
