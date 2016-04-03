@@ -60,15 +60,20 @@ public boolean isWon()
 }
 public void displayLosingMessage()
 {
-  buttons[9][8].setLabel("L");
-  buttons[9][9].setLabel("O");
-  buttons[9][10].setLabel("S");
-  buttons[9][11].setLabel("E");
-  buttons[9][12].setLabel("R");
-  for (int i =0; i < bombs.size (); i++) {
-    bombs.get(i).marked = false;
-    bombs.get(i).clicked = true;
-  }
+    textSize(40);
+    fill(255,0,0);
+    text("LOSER",140,200);
+//  buttons[9][8].setLabel("L");
+//  buttons[9][9].setLabel("O");
+//  buttons[9][10].setLabel("S");
+//  buttons[9][11].setLabel("E");
+//  buttons[9][12].setLabel("R");
+   for (int i =0; i < bombs.size (); i++) {
+   bombs.get(i).marked = false;
+   bombs.get(i).clicked = true;
+ }
+    //textAlign(CENTER, CENTER);
+    
 }
 public void displayWinningMessage()
 {
